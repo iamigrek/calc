@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<metbutton charset="UTF-8">
+		<metbutton http-equiv="X-UA-Compatible" content="IE=edge">
+			<metbutton name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Calculate</title>
+				<link rel="stylesheet" href="/css/reset.css">
+				<link rel="stylesheet" href="/css/style.css">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+	<div class="container grid">
+
+		<form class="form" name="form"><input class="input" readonly type="text" name="textview"></form>
+
+		<div class="contaoner-btn grid">
+			<button class="item clear-all" onclick="clean()">CE</button>
+			<button class="item clear" onclick="back()">&larr;</button>
+
+			<button class="item" onclick="insert('/')">/</button>
+			<button class="item" onclick="insert('*')">*</button>
+			<button class="item" onclick="insert('-')">-</button>
+			<button class="item" onclick="insert('+')">+</button>
+			<button class="item" onclick="insert('7')">7</button>
+			<button class="item" onclick="insert('8')">8</button>
+			<button class="item" onclick="insert('9')">9</button>
+			<button class="item" onclick="insert('(')">(</button>
+
+
+			<button class="item" onclick="insert('4')">4</button>
+			<button class="item" onclick="insert('5')">5</button>
+			<button class="item" onclick="insert('6')">6</button>
+			<button class="item" onclick="insert(')')">)</button>
+
+			<button class="item" onclick="insert('1')">1</button>
+			<button class="item" onclick="insert('2')">2</button>
+			<button class="item" onclick="insert('3')">3</button>
+			<button class="item equally" onclick="equal()">=</button>
+
+			<button class="item zero" onclick="insert('0')">0</button>
+			<button class="item" onclick="insert('.')">.</button>
+
+		</div>
+
+	</div>
+
+
+	<script src="/js/main.js"></script>
+
+</body>
+
+</html>
