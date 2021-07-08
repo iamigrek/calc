@@ -93,7 +93,7 @@ body {
 
 .item {
   outline: 0;
-
+  user-select: none;
   background-color: #bbbbf2;
   border: none;
 
