@@ -1,5 +1,3 @@
-const exp = document.form.textview.value;
-
 function insert(num) {
   let val = document.form.textview.value;
   document.form.textview.value = val + num;
@@ -7,6 +5,7 @@ function insert(num) {
 }
 
 function back() {
+  const exp = document.form.textview.value;
   document.form.textview.value = exp.substring(0, exp.length - 1);
 }
 
@@ -15,5 +14,6 @@ function clean() {
 }
 
 function equal() {
+  const exp = document.form.textview.value;
   exp && (document.form.textview.value = eval(exp));
 }
